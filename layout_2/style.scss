@@ -1,0 +1,55 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+//Här är bakgrunden till body:n
+body {
+  background-color: #d2dae2;
+}
+//Här är Rubriken med textstilen och storleken
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 4.125rem;
+  text-transform: uppercase;
+}
+// Här är container:n med max-width, margin auto så den kommer in i mitten och sedan wrappar in cardsen
+.container {
+  max-width: 1160px;
+  margin: auto;
+  flex-wrap: wrap;
+  //Här är header:n som är längst upp
+  &.main-header {
+    background-color: #1e272e;
+    min-height: 6.25rem;
+  }
+  //Här är galleriet/container:n där cardsen ligger i
+  &.gallery {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    min-height: 39.375rem;
+    //Jag har valt att använda pixlar eftesom att då kommer den alltid bete sig lika beroende på storlek på skärmen
+    padding: 10px;
+  }
+  //Här är card:sen, använde 31% då de skulle få plats tre på raden
+  .card {
+    display: flex;
+    flex: 0 0 31%;
+    background-color: #485460;
+    //jag har valt att använda pixlar eftesom att då kommer den alltid bete sig lika beroende på storlek på skärmen
+    margin: 0.625rem;
+    min-height: 12.5rem;
+  }
+}
+//Här är container:n som är under header:n använde justify-content:center & align-items:center för att få in texten i mitten
+.fluid-container {
+  background-color: #3c40c6;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 21.875rem;
+}

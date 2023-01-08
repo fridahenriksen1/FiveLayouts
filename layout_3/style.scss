@@ -1,0 +1,78 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+//Färgen till body
+body {
+  background-color: #e9e9e9;
+}
+//Så att bilden är 100%
+img {
+  width: 100%;
+}
+//h2 rubrikerna med textstil, storlek & padding-top
+h2 {
+  font-family: "Satisfy", cursive;
+  font-size: 2.062rem;
+}
+//p texter med textstil, storlek & padding-top
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #707070;
+  margin-bottom: 1rem;
+  line-height: 1.875rem;
+}
+//Container:n som håller i allt, display:flex för att sätta ut de tre boxarna/spalterna
+.container {
+  background-color: white;
+  display: flex;
+  max-width: 1400px;
+  margin: auto;
+
+  //Här är boxarna som är fördelade med 33.3333% för att de ska få lika stor plats på skärmen, flex-wrap för att wrapa ner texten under bilderna, sen justify-content för att få in texten horisontellt i mitten
+  .box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    flex: 0 0 33.3333%;
+    
+    &.zengarden{
+      align-content: stretch;
+    }
+    // Här är bildtexten 
+    figcaption {
+      font-family: "Poppins", sans-serif;
+      font-size: 0.875rem;
+      max-width: 400px;
+      margin: auto;
+    }
+    // Här är mittersta boxen för att ändra färg på bara den
+    &.grey-box {
+      background-color: #fafdf8;
+    }
+    //Här är klassen card med first-card, card-two, headline och text.
+    //I first-p är det att texten oas i naturen hamnar i mitt mitten och stora bokstäver
+    //Headline är rubriken i första spalten, med storleken och textstilen
+    //Text-klassen är en max-width på 25rem för att hålla texten inom det och en margin för att få det lite mer luftigt
+    .card {
+      //TOP,BOTTOM men ej sidorna
+      padding: 1rem 0;
+      .first-p {
+        text-align: center;
+        color: black;
+        text-transform: uppercase;
+      }
+      .headline {
+        font-size: 4.375rem;
+        font-family: "Satisfy", cursive;
+      }
+      .text {
+        max-width: 400px;
+      }
+    }
+  }
+}

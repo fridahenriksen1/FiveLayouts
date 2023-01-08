@@ -1,0 +1,70 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.hero {
+  background-image: url("/layout_5/img/running.jpg");
+  height: 100vh;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+}
+
+.hero .svg-pic {
+  width: 3.6675rem;
+  position: absolute;
+  bottom: 2rem;
+}
+
+h1 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 5rem;
+  color: #b7000c;
+  margin-top: 3rem;
+}
+
+.p-two {
+  margin-top: 1rem;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.container .text-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+}
+
+.container .text-box .aside-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+}
+
+.container .text-box .article-box {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+/*# sourceMappingURL=style.css.map */

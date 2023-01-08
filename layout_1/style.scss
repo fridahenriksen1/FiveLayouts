@@ -1,0 +1,44 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*Här är container:n där alla alla element ligger*/
+.container {
+  background-color: #d2dae2;
+  max-width: 1160px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  /*Här är headern som ligger längst upp*/
+  .main-header {
+    background-color: #ff3f34;
+    height: 150px;
+    flex: 0 0 1120px;
+    margin-bottom: 20px;
+  }
+  /*Här är de gula card:sen som ligger under header*/
+  .card {
+    background-color: #ffa801;
+    height: 300px;
+    flex: 0 0 550px;
+    margin-bottom: 20px;
+  }
+  /*Här är de fyra små card:sen som ligger under de två större card:sen*/
+  .littlecard {
+    background-color: #ffdd59;
+    height: 300px;
+    flex: 0 0 265px;
+    margin-bottom: 20px;
+    border-bottom: 10px solid #ffd802;
+  }
+  /*Här är footer:n som ligger längst ner*/
+  .main-footer {
+    background-color: #0be881;
+    height: 300px;
+    flex: 0 0 1120px;
+  }
+}

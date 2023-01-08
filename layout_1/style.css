@@ -1,0 +1,65 @@
+@charset "UTF-8";
+*,
+html {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*Här är container:n där alla alla element ligger*/
+.container {
+  background-color: #d2dae2;
+  max-width: 1160px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  /*Här är headern som ligger längst upp*/
+  /*Här är de gula card:sen som ligger under header*/
+  /*Här är de fyra små card:sen som ligger under de två större card:sen*/
+  /*Här är footer:n som ligger längst ner*/
+}
+
+.container .main-header {
+  background-color: #ff3f34;
+  height: 150px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 1120px;
+          flex: 0 0 1120px;
+  margin-bottom: 20px;
+}
+
+.container .card {
+  background-color: #ffa801;
+  height: 300px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 550px;
+          flex: 0 0 550px;
+  margin-bottom: 20px;
+}
+
+.container .littlecard {
+  background-color: #ffdd59;
+  height: 300px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 265px;
+          flex: 0 0 265px;
+  margin-bottom: 20px;
+  border-bottom: 10px solid #ffd802;
+}
+
+.container .main-footer {
+  background-color: #0be881;
+  height: 300px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 1120px;
+          flex: 0 0 1120px;
+}
+/*# sourceMappingURL=style.css.map */

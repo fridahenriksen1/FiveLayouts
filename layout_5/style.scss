@@ -1,0 +1,67 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  //scroll-behavior för att det ska bli en smooth scrollning och overflow-x:hidden är så att scrollen på x-axeln göms
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+//Här hämtas bilden från en url
+//100vh & 100vw för att bilden ska ner och ut fullt ut
+//text-align för att ikonen ska komma till mitten
+//Position: relative för att man sedan på klassen för ikonen ska kunna ha position:absolute (så att man kan flytta runt den)
+.hero {
+  background-image: url("/layout_5/img/running.jpg");
+  height: 100vh;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  //Här är ikonen, witdh för att ändra storlekn på den
+  //position absolute så man kan flytta runt på ikonen, sen bottom för att ha lite lugt emellan
+  .svg-pic {
+    width: 3.6675rem;
+    position: absolute;
+    bottom: 2rem;
+  }
+}
+//Rubriken
+h1 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 5rem;
+  color: #b7000c;
+  margin-top: 3rem;
+}
+//Här blir det ett mellanrum på p:na
+.p-two {
+  margin-top: 1rem;
+}
+//Containern med max bredd på 60%
+//Margin för att få den till mitten
+.container {
+  max-width: 1400px;
+  margin: auto;
+  // display flex för att kunna använda justify-content:space-between så att de åker ut från varandra
+  //margin för att det ska bli mellanrum mellan text och rubrik, sen bottom för att det ska bli lite mellanrum ner till slutet av sidan
+  .text-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 8rem;
+    // 40% på aside för att den skulle vara mindre
+    .aside-text {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      font-size: 1.25rem;
+      flex: 0 0 40%;
+    }
+    //50% på arikel boxen för att den skulle få mer plats
+    .article-box {
+      font-family: "Roboto", sans-serif;
+      font-size: 1.125rem;
+      font-weight: 400;
+      flex: 0 0 50%;
+    }
+  }
+}

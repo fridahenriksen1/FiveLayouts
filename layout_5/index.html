@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--Här är google font länken-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&family=Roboto+Slab:wght@700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>Layout_5</title>
+</head>
+
+<body>
+  <!--Header klassen-->
+  <header class="hero">
+    <!--Här är en länk som är kopplat till ett id, så att när man trycker på den så kommer man ner till id:et(ordet down, alltså ner till början av main)-->
+    <a href="#down">
+      <!--Här la jag in svg:n i en img tag för att få fram den-->
+      <img class="svg-pic" src="/layout_5/img/arrow_circle_down-white-18dp.svg" alt="Vit pil i cikel som pekar ner">
+    </a>
+  </header>
+  <!--Klassen container som håller i allt -->
+  <main class="container">
+    <!--Här är id:et som man kommer ner till när man trycker på länken där uppe-->
+    <a id="down"></a>
+    <!--Rubriken-->
+    <h1>Trail running</h1>
+    <!--Klass för all text -->
+    <div class="text-box">
+      <!--Klass för artikeln så man kan ändra i endast den-->
+      <article class="article-box">
+        <p>
+          Trail running is a sport/activity which consists of running and hiking
+          over trails. In the United Kingdom and Ireland it is also called
+          mountain or fell running although the two types do differ. It differs
+          from road running and track running in that it generally takes place
+          on hiking trails, often in mountainous terrain, where there can be
+          much larger ascents and descents. It is difficult to definitively
+          distinguish trail running from cross country running. In general,
+          however, cross country is an IAAF governed discipline that is
+          typically raced over shorter distances.
+          <!--Gjorde en klass för den så jag kunde få ett mellanrum, valde det istället för br för att jag tyckte det kändes tydligare -->
+        <p class="p-two">The amount of organized trail
+          races has grown over the past few years throughout the world, now well
+          into the hundreds in North America alone.[1] Runners often cite less
+          impact stress compared to road running, as well as the landscape and
+          non-urban environment, as primary reasons for preferring trail
+          running.[2] This move to nature is also reflected in a large increase
+          in competitors in non-traditional/off-road triathlons and adventure
+          racing over the past five years.</p>
+        </p>
+      </article>
+      <!--Klassen för texten på sidan (höger)-->
+      <aside class="aside-text">
+        <p>“In college I suffered from multiple stress fractures which reflected the high volume of training we were
+          doing,” Paige says. “At the time, I wasn't confident enough to take on more ownership of my body.” Since then,
+          she’s learned a lot about how to monitor and balance her stress—both physical and psychological—and how use
+          recovery and nutrition to her advantage.</p>
+      </aside>
+    </div>
+
+  </main>
+</body>
+
+</html>

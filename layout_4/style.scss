@@ -1,0 +1,120 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+//Här är den svarta spalten med F:et i
+//Display flex så man kan använda justify-content för att centrera f:et
+//width 3.75rem för hur bre den ska vara
+//Sen 100vh så den går ner och ändrade till fixed för att den skulle gå ner hela vägen istället för absolute
+//left:0 och top:0 för att det ska vara tydligt att de håller sig där
+//Sen padding för F:et
+.black-f {
+  display: flex;
+  background-color: black;
+  width: 3.75rem;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  justify-content: center;
+  padding-top: 1.875rem;
+
+  // p f:et för att sätta färg, textsstil,storlek och hur tjock den ska vara
+  .f {
+    color: white;
+    font-size: 1.875rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+  }
+}
+//Så bilden är 100% fullt ut
+img {
+  width: 100%;
+}
+//Detta är den högra spalten men meny ikonen
+//Här gjorde jag liknande som på den svarta spalten med F:et
+.menu-spalt {
+  display: flex;
+  background-color: white;
+  width: 3.75rem;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  justify-content: center;
+  padding-top: 1.875rem;
+  //För att göra ikonen lika stor som F:et i den svarta spalten
+  .icon {
+    font-size: 1.875rem;
+  }
+}
+//Container:n som håller allt, hur stor och margin:auto så den hamnar i mitten av skärmen
+.container {
+  background-color: white;
+  max-width: 900px;
+  margin: auto;
+  //Display flex för att kunna använda justify-content med space-between så de åker ut på varsitt håll
+  //Sen align-items för att centrera texten i mitten
+  //Har border för att få fram de svarta strecken
+  .navbar {
+    display: flex;
+    border-bottom: 0.125rem solid black;
+    height: 3.75rem;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 700;
+    justify-content: space-between;
+    align-items: center;
+  }
+  //Rubriken med textstorlek/tjockleck sen padding, margin och letter-spacing för att få det luftigare
+  h1 {
+    font-size: 6.25rem;
+    font-weight: 700;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+    letter-spacing: 0.125rem;
+  }
+  //Här är main klassen som är under rubriken
+  //har display flex för justify-content så de åker åt varsitt håll
+  .main-class {
+    display: flex;
+    justify-content: space-between;
+    //Justeringar för p-texten
+    .p-text {
+      margin-bottom: 2rem;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 1.125rem;
+      padding-top: 1rem;
+      color: #707070;
+    }
+    //Här har jag 60% för att artikel klassen så få med plats
+    .article-class {
+      border-bottom: 0.125rem solid black;
+      border-top: 0.125rem solid black;
+      padding-bottom: 2rem;
+      margin-bottom: 2rem;
+      flex: 0 0 60%;
+    }
+    .movie-info {
+      padding-top: 0.5rem;
+      color: #707070;
+    }
+    //Här har jag 30% för aside skulle få mindre plats, sen återstår det 10% i mellanrummet mellan arikel och aside
+    .aside-class {
+      border-top: 0.125rem solid black;
+      border-bottom: 0.125rem solid black;
+      flex: 0 0 30%;
+      margin-bottom: 18rem;
+    }
+    .Georgia {
+      font-family: Georgia, "Times New Roman", Times, serif;
+    }
+    h2 {
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 1.125rem;
+      padding-top: 1rem;
+    }
+  }
+}
